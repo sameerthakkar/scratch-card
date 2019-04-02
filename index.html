@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="scratch.css">
+  <script type="text/javascript" src="scratchcard.js"></script>
+</head>
+<body>
+		<canvas id="scratch_card_canvas" height="200px" width="200px"
+				style="background-image: url(TRAVEL.jpeg);
+				top: 50%;
+				left: 50%;"/>
+	
+	<script>
+		var options = {
+		  id: 'scratch_card_canvas',
+		  brushSize: 40,
+		  lineJoin: 'round',
+		  percentRequired: 80,
+		  coverImageSrc: 'IMG-0.jpeg'
+		};
+
+		var yourScratchCard = new ScratchCard(options);
+
+		yourScratchCard.addEventListener('success', function (e) {
+		  alert('You can do whatever you want here!');
+		}, false);
+	</script>
+</body>
+</html>
+
+<style>
+</style>
